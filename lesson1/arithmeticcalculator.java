@@ -3,7 +3,14 @@ import java.util.*;
 
 class Operation
 {
-	public void add(double arr[], int n)
+	int n;
+	double arr[];
+	public Operation(double arr[], int n)
+	{
+		this.arr = arr;
+		this.n=n;
+	}
+	public void add()
 	{
 		double ans=0;
 		for(int i=0;i<n;i++)
@@ -12,7 +19,7 @@ class Operation
 		}
 		System.out.println("Answer: "+ ans);
 	}
-	public void subtract(double arr[], int n)
+	public void subtract()
 	{
 		double ans=0;
 		for(int i=0;i<n;i++)
@@ -21,7 +28,7 @@ class Operation
 		}
 		System.out.println("Answer: "+ ans);
 	}
-	public void multiply(double arr[], int n)
+	public void multiply()
 	{
 		double ans=1;
 		for(int i=0;i<n;i++)
@@ -30,7 +37,7 @@ class Operation
 		}
 		System.out.println("Answer: "+ ans);
 	}
-	public void division(double arr[], int n)
+	public void division()
 	{
 		double ans=1;
 		for(int i=1;i<n;i++)
@@ -44,27 +51,27 @@ public class arithmeticcalculator
 {
 	public static void main(String[] args)
 	{
-		Operation o = new Operation();
 		Scanner sc= new Scanner(System.in);
 		System.out.println("Enter the total numbers: ");
-		int n = sc.nextInt();
+		final int n = sc.nextInt();
 		double arr[] = new double[n];
 		System.out.println("Enter the numbers: ");
 		for(int i=0;i<n;i++)
 		{
 			arr[i] = sc.nextDouble();
 		}
+		Operation o = new Operation(arr, n);
 		System.out.println("Enter your choice of operation:\t1. add\t2. subtract\t3. multiply\t4. division");
-		int ch = sc.nextInt();
+		final int ch = sc.nextInt();
 		switch(ch)
 		{
-		case 1:o.add(arr, n);
+		case 1:o.add();
 		break;
-		case 2:o.subtract(arr, n);
+		case 2:o.subtract();
 		break;
-		case 3:o.multiply(arr, n);
+		case 3:o.multiply();
 		break;
-		case 4:o.division(arr, n);
+		case 4:o.division();
 		break;
 		default:System.out.println("Enter the right choice");
 		}
