@@ -3,48 +3,28 @@ import java.util.*;
 
 class Operation
 {
-	int n;
-	double arr[];
-	public Operation(double arr[], int n)
+	double num1;
+	double num2;
+	public Operation(double num1, double num2)
 	{
-		this.arr = arr;
-		this.n=n;
+		this.num1 = num1;
+		this.num2 = num2;
 	}
 	public void add()
 	{
-		double ans=0;
-		for(int i=0;i<n;i++)
-		{
-			ans+=arr[i];
-		}
-		System.out.println("Answer: "+ ans);
+		System.out.println("Answer: "+ (num1+num2));
 	}
 	public void subtract()
 	{
-		double ans=0;
-		for(int i=0;i<n;i++)
-		{
-			ans-=arr[i];
-		}
-		System.out.println("Answer: "+ ans);
+		System.out.println("Answer: "+ (num1-num2));
 	}
 	public void multiply()
 	{
-		double ans=1;
-		for(int i=0;i<n;i++)
-		{
-			ans*=arr[i];
-		}
-		System.out.println("Answer: "+ ans);
+		System.out.println("Answer: "+ (num1*num2));
 	}
 	public void division()
 	{
-		double ans=1;
-		for(int i=1;i<n;i++)
-		{
-			ans= arr[i-1]/arr[i];
-		}
-		System.out.println("Answer: "+ ans);
+		System.out.println("Answer: "+ (num1/num2));
 	}
 }
 public class arithmeticcalculator 
@@ -52,15 +32,11 @@ public class arithmeticcalculator
 	public static void main(String[] args)
 	{
 		Scanner sc= new Scanner(System.in);
-		System.out.println("Enter the total numbers: ");
-		final int n = sc.nextInt();
-		double arr[] = new double[n];
-		System.out.println("Enter the numbers: ");
-		for(int i=0;i<n;i++)
-		{
-			arr[i] = sc.nextDouble();
-		}
-		Operation o = new Operation(arr, n);
+		System.out.println("Enter the 1st numbers: ");
+		final double num1 = sc.nextDouble();
+		System.out.println("Enter the 2nd numbers: ");
+		final double num2 = sc.nextDouble();
+		Operation o = new Operation(num1, num2);
 		System.out.println("Enter your choice of operation:\t1. add\t2. subtract\t3. multiply\t4. division");
 		final int ch = sc.nextInt();
 		switch(ch)
@@ -73,7 +49,8 @@ public class arithmeticcalculator
 		break;
 		case 4:o.division();
 		break;
-		default:System.out.println("Enter the right choice");
+		default:System.out.println("Please, Enter the right choice");
+		break;
 		}
 		sc.close();
 	}
