@@ -15,7 +15,7 @@ class Modifiers
 		System.out.println("Protected function: "+ num);
 	}
 }
-public class accessmodifiers extends Modifiers
+public class accessmodifiers1 extends Modifiers
 {
 	public static void main(String[] args)
 	{

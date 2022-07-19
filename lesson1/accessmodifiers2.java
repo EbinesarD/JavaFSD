@@ -1,10 +1,10 @@
 package lesson1;
 
-public class accessmodifier2 extends accessmodifiers
+public class accessmodifiers2 extends accessmodifiers1
 {
 	public static void main(String[] args)
 	{
-		accessmodifier2 ac = new accessmodifier2();
+		accessmodifiers2 ac = new accessmodifiers2();
 		ac.pro_func();
 		ac.pub_func();
 	}
