@@ -12,6 +12,18 @@ public class regularExpressions {
 		{
 			System.out.println(check.substring(c.start(), c.end()));
 		}
+		String s1 = "[0-9]+";
+		String s2 = "1005";
+		Pattern p1 = Pattern.compile(s1);
+		Matcher m1 = p1.matcher(s2);
+		if(m1.matches())
+		{
+			System.out.println("Match found");
+		}
+		else
+		{
+			System.out.println("No match found");
+		}
 		
 	}
 }
