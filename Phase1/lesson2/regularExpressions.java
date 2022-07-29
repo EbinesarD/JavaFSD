@@ -16,7 +16,11 @@ public class regularExpressions {
 		String s2 = "1005";
 		Pattern p1 = Pattern.compile(s1);
 		Matcher m1 = p1.matcher(s2);
-		if(m1.matches())
+		String s3 = "^[A-Za-z0-9]+\\.(docx|pdf|csv|xls|txt)$";
+		String s4 = "file1.txt";
+		Pattern p2 = Pattern.compile(s3);
+		Matcher m2 = p2.matcher(s4);
+		if(m2.matches())
 		{
 			System.out.println("Match found");
 		}

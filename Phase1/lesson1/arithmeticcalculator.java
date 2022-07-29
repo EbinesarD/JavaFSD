@@ -1,4 +1,4 @@
-package lesson1;
+package Phase1.lesson1;
 import java.util.*;
 
 class Operation

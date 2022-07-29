@@ -1,4 +1,4 @@
-package lesson1;
+package Phase1.lesson1;
 
 public class accessmodifiers2 extends accessmodifiers1
 {

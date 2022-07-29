@@ -1,4 +1,4 @@
-package lesson2;
+package Phase1.Practice_Project_Non_Assisted.Validation_Of_An_Email_Id;
 
 import java.util.LinkedHashSet;
 import java.util.*;

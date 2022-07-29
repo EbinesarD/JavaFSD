@@ -1,4 +1,4 @@
-package lesson4;
+package Phase1.Practice_Project_Non_Assisted.Longest_Increasing_Subsequence;
 
 public class Subsequence {
 	public static void sequence(int a1[])

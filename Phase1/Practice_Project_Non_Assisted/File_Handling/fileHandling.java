@@ -1,4 +1,4 @@
-package lesson3;
+package Phase1.Practice_Project_Non_Assisted.File_Handling;
 
 import java.io.File;
 import java.io.FileReader;

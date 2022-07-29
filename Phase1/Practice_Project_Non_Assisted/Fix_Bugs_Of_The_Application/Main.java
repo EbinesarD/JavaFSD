@@ -1,4 +1,4 @@
-package lesson5;
+package Phase1.Practice_Project_Non_Assisted.Fix_Bugs_Of_The_Application;
 
 import java.util.ArrayList;
 import java.util.Collections;

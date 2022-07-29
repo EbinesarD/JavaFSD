@@ -1,4 +1,4 @@
-package lesson1;
+package Phase1.Practice_Project_Non_Assisted.Arithmetic_Calculator;
 import java.util.*;
 
 class Operation
