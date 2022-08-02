@@ -1,4 +1,4 @@
-package lesson2;
+package Phase1.lesson2;
 import java.util.*;
 public class arrays {
 	public static void main(String[] args) 
