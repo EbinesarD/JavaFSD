@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+    <hibernate-mapping package="com">
+    	
+    	<class name="Flights" table="routes">
+    		<id name="ID" column="ID">
+    			<generator class="increment"></generator>
+    		</id>
+    		<property name="From_place" type="string" />
+    		<property name="To_place" type="string" />
+    		<property name="Airline_ID" type="int" />
+    		<property name="Price" type="double" />
+    		<property name="Airline" type="string" />
+    		<property name="Date" type="date" />
+    		<property name="Time" type="string" />
+    		<property name="Route" type="string" />
+    		
+    	</class>
+    </hibernate-mapping>
