@@ -26,6 +26,5 @@ public class AnswerService {
 		Query query = em.createQuery("select a.QuestionId, q.Answer , a.Answer , case when (q.Answer = a.Answer) then 'Correct' else 'Wrong' end "
 				+ "from Answer a, Questions q  where (a.ParticipantId="+participant_id+" and a.QuizId="+quiz_id+") and a.QuestionId = q.Id");
 		return query.getResultList();
-	}
-	
+	}	
 }
