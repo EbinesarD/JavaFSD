@@ -1,0 +1,28 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "firstName": "Sebastian",
+      "lastName": "Eschweiler",
+      "emailId": "sebastian@codingthesmartway.com"
+    },
+    {
+      "firstName": "Chris",
+      "lastName": "Evans",
+      "emailId": "cevans@gmail.com",
+      "id": 3
+    },
+    {
+      "firstName": "Robert",
+      "lastName": "Downey Jr",
+      "emailId": "rdj@gmail.com",
+      "id": 4
+    },
+    {
+      "firstName": "Bruce",
+      "lastName": "Wayne",
+      "emailId": "bw@gmail.com",
+      "id": 5
+    }
+  ]
+}
