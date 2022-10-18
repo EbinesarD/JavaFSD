@@ -1,0 +1,10 @@
+----FrontEnd---
+
+1. login[name, password, role(user admin)]
+2. registration[name, mobile, email,gender, dob, doj, password, designation]
+3. employeedashboard[leave, salary, attendencedashboard[], dropdown(top right croner)->1.edit 2.logout]
+4. attendancedashboard[fetch details of timesheet(attendance table)]
+5. leave[applyleavedashboard[], leavestatusdashboard[fetch all leave data in table]]
+6. salarydashboard[all the salary details in table]
+
+

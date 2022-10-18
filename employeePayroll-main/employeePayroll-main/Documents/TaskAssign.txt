@@ -1,0 +1,19 @@
+Date 14-10-22
+Deadline 16-10-22 (afternoon)
+---------FRONT-END---------
+
+Bachu Sucharitha   -> (1) [FrontendComponents.txt] --
+Badisha kumar      -> (2) [FrontendComponents.txt] 
+Bandi Venkatareddy -> (3) [FrontendComponents.txt]
+Bhalavaishnavi S   -> (4) [FrontendComponents.txt]
+chiranjeet gorai   -> (5) [FrontendComponents.txt] -- 
+Dodda MohanReddy   -> (6) [FrontendComponents.txt] -- 
+
+
+
+---Backend----
+
+bakiyalakshmi -> (3) [backendtables.txt]
+ebinesar D    -> (2) [backendtables.txt]
+Baljeet       -> (1) [backendtables.txt]
+Eshwar        -> (4) [backendtables.txt]

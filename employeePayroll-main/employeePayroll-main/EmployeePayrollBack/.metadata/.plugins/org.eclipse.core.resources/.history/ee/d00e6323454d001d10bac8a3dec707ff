@@ -1,0 +1,51 @@
+package com.payroll.app.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.payroll.app.entities.Leaves;
+import com.payroll.app.repo.LeaveRepo;
+
+@Service
+public class LeaveService {
+    
+    @Autowired
+    private LeaveRepo repo;
+    
+    public Leaves applyLeave(Leaves leave) {
+        return repo.save(leave);
+    }
+    
+    public List<Leaves> getAllLeave(){
+        return repo.findAll();
+    }
+    
+    public Leaves getLeaveByEmployeeid(String employeeid) {
+        if(repo.findByEmployeeid(employeeid).isPresent()){
+            return repo.findByEmployeeid(employeeid).get();
+        }
+        else 
+            return null;    
+    }
+    
+    public Leaves updateLeave(String employeeid,Leaves newLeave) {
+        if(repo.findByEmployeeid(employeeid).isPresent()) {
+            Leaves oldLeave = repo.findByEmployeeid(employeeid).get();
+            oldLeave.setStatus(newLeave.getStatus());
+            return repo.save(oldLeave);
+        }
+        else
+            return null;
+    }
+    
+    public boolean deleteLeave(String employeeid) {
+        if(repo.findByEmployeeid(employeeid).isPresent()) {
+            repo.deleteByEmployeeid(employeeid);
+            return true;
+        }
+        else 
+            return false;
+    }
+}

@@ -1,0 +1,63 @@
+--------------------------------- employeepayroll -------------------
+
+----------Register Employee----
+
+1.employee (changes -> user[baljeet])
+
+long id(primary key) (autogenerted)
+String employeeid (auto generate)
+String name
+String mobile
+String email
+String gender
+String dob
+String doj 
+String password
+String designation 
+String role (to seperate admin and employee)
+String schedule
+
+
+
+
+---user dashboard -> time sheet-----
+
+2. leave (leaves[ebinesar])
+long id
+employeeid
+Startdate
+enddate
+reason
+status
+
+
+
+----Attendance------
+
+will display 
+(display the tamesheet data)
+
+3.
+timesheet
+ long id
+ employeeid
+ name
+ starttime
+ endtime
+ date
+ status
+
+4. salary
+long id
+employeeid
+name
+month
+year
+salary 
+
+
+----SalarySlipDemo-----
+empid name month salary action
+123	xyz	oct	1999		download
+123	xyz	oct	1999		download
+123	xyz	oct	1999		download

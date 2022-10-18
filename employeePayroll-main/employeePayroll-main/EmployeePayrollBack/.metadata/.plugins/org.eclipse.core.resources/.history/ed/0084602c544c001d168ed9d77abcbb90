@@ -1,0 +1,57 @@
+package com.payroll.app.entities;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class User {
+	
+	@Id
+	@Column(name="id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private long id;
+	
+	String employeeid;
+	String name;
+	String mobile;
+	String email;
+	String gender;
+	String dob;
+	String doj;
+	String password;
+	String designation;
+	String role = "2";
+	
+	public User(long id, String employeeid, String name, String mobile, String email, String gender, String dob,
+			String doj, String password, String designation, String role) {
+		super();
+		this.id = id;
+		this.employeeid = employeeid;
+		this.name = name;
+		this.mobile = mobile;
+		this.email = email;
+		this.gender = gender;
+		this.dob = dob;
+		this.doj = doj;
+		this.password = password;
+		this.designation = designation;
+		this.role = role;
+	}
+
+	public User() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", employeeid=" + employeeid + ", name=" + name + ", mobile=" + mobile + ", email="
+				+ email + ", gender=" + gender + ", dob=" + dob + ", doj=" + doj + ", password=" + password
+				+ ", designation=" + designation + ", role=" + role + "]";
+	}
+	
+	
+}

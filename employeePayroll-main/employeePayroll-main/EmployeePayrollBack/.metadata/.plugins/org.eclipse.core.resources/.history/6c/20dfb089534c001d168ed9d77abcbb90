@@ -1,0 +1,5 @@
+package com.payroll.app.repo;
+
+public class UserRepo extends JpaRepository<user, Long> {
+
+}
